@@ -8,7 +8,7 @@ k = "korkea"
 if sukupuoli == "nainen":
     if hemoglobiini < 177:
         tulos = a
-    elif 177 <= hemoglobiini <= 175:
+    elif 117 <= hemoglobiini <= 175:
         tulos = n
     else:
         tulos = k
