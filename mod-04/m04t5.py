@@ -6,6 +6,7 @@ while kokeilut < 5:
     if tunnus == "python" and salasana == "rules":
         paasy = True
         break
+    print("Väärä käyttäjätunnus tai salasana.")
     kokeilut += 1
     
 if paasy:
