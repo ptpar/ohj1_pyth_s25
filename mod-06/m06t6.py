@@ -14,6 +14,7 @@ else:
 
 
 """
+2. vaihtoehto for-loopilla:
 alhaisin = None
 numero = 0
 for i in range(2):
