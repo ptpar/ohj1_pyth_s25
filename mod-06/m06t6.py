@@ -17,7 +17,7 @@ else:
 #2. vaihtoehto for-loopilla:
 alhaisin = None
 numero = 0
-for i in range(5):
+for i in range(2):
     pizza = yksikkohinta(float(input("Halkaisija (cm): ")), float(input("Hinta (eur): ")))
     if alhaisin is None or pizza < alhaisin:
         alhaisin = pizza
