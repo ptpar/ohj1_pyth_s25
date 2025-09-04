@@ -1,7 +1,7 @@
 from math import pi
 
 def yksikkohinta(h, eur):
-    return eur / (pi * (h/2/10000) ** 2)
+    return eur / (pi * (h/2/100) ** 2)
 
 print("1. pizza:")
 pizza1 = yksikkohinta(float(input("Halkaisija (cm): ")), float(input("Hinta (eur): ")))
