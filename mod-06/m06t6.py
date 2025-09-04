@@ -1,7 +1,7 @@
 from math import pi
 
 def yksikkohinta(h, eur):
-    return eur / (pi * 2*(h/2/10000) ** 2)
+    return eur / (pi * (h/2/10000) ** 2)
 
 print("1. pizza:")
 pizza1 = yksikkohinta(float(input("Halkaisija (cm): ")), float(input("Hinta (eur): ")))
@@ -14,10 +14,10 @@ else:
 
 
 """
-2. vaihtoehto for-loopilla:
+#2. vaihtoehto for-loopilla:
 alhaisin = None
 numero = 0
-for i in range(2):
+for i in range(5):
     pizza = yksikkohinta(float(input("Halkaisija (cm): ")), float(input("Hinta (eur): ")))
     if alhaisin is None or pizza < alhaisin:
         alhaisin = pizza
