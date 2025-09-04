@@ -4,8 +4,9 @@ def heitto(b):
     return randint(1,b)
 
 tahkot = int(input("Anna nopan tahkojen yhteismäärä: "))
-while True:
+silmaluku = 0
+kierros = 0
+while silmaluku != tahkot:
     silmaluku = heitto(tahkot)
-    print(silmaluku)
-    if silmaluku == tahkot:
-        break
+    kierros += 1
+    print(f"{kierros}. kierros: {silmaluku}")
