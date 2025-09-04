@@ -13,6 +13,7 @@ else:
     print("2. pizzalla alhaisempi yksikköhinta.")
 
 
+
 """
 #2. vaihtoehto for-loopilla:
 alhaisin = None
