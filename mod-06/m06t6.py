@@ -9,8 +9,10 @@ print("2. pizza:")
 pizza2 = yksikkohinta(float(input("Halkaisija (cm): ")), float(input("Hinta (eur): ")))
 if pizza1 < pizza2:
     print("1. pizzalla alhaisempi yksikköhinta.")
-else:
+elif pizza1 > pizza2:
     print("2. pizzalla alhaisempi yksikköhinta.")
+else:
+    print("Samanhintaiset.")
 
 
 
@@ -22,6 +24,11 @@ for i in range(2):
     pizza = yksikkohinta(float(input("Halkaisija (cm): ")), float(input("Hinta (eur): ")))
     if alhaisin is None or pizza < alhaisin:
         alhaisin = pizza
-        numero = i+1
-print(f"{numero}. pizzalla on alhaisin yksikköhinta.")
+        numero = str(i+1)
+    elif pizza == alhaisin:
+        numero += ", " + str(i+1)
+if len(numero) == 1:
+    print(f"{numero}. pizzalla on alhaisin yksikköhinta.")
+else:
+    print(f"Pizzat {numero} ovat samanhintaisia.")
 """
