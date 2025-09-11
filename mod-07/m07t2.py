@@ -7,4 +7,7 @@ while nimi != "":
         print("Uusi nimi")
     nimet.add(nimi)
     nimi = input("Syötä nimi. Tyhjä merkkijono lopettaa ohjelman. ")
-print(nimet)
+if nimet:
+    print("Nimet mielivaltaisessa järjestyksessä", nimet)
+else:
+    print("Et syöttänyt yhtään nimeä.")
