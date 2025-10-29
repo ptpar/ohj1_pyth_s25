@@ -1,5 +1,6 @@
 import requests
 
+
 apikey = ""
 #https://openweathermap.org/api
 #Coordinates by
