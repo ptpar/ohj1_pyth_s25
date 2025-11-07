@@ -26,3 +26,5 @@ try:
         print("Hakusanalla ei tuloksia")
 except requests.exceptions.RequestException as e:
     print("Hakua ei voitu suorittaa")
+except Exception as ex:
+    print("Tapahtui odottamanton virhe:", ex)
