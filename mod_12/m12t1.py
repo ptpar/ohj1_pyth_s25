@@ -1,9 +1,13 @@
 import requests
-import random
 
-# Retrieve a list of available categories: https://api.chucknorris.io/jokes/categories
-categories_response = requests.get("https://api.chucknorris.io/jokes/categories").json()
-category = random.choice(categories_response)
-
-joke_response = requests.get(f"https://api.chucknorris.io/jokes/random?category={category}").json()
-print(joke_response["value"])
+try:
+    response = requests.get('https://api.chucknorris.io/jokes/random')
+    if response.status_code == 200:
+        joke = response.json()
+        print(joke['value'])
+    else:
+        print('Tapahtui odottamaton virhe: statuskoodi ei ole 200')
+except requests.exceptions.RequestException as e:
+    print('Hakua ei voitu suorittaa')
+except Exception as e:
+    print('Tapahtui odottamaton virhe:', e)
